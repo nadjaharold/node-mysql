@@ -3,6 +3,8 @@
 ## MEMO
 
 ```bash
+# 状態確認
+mysql.server status
 # 起動
 mysql.server start
 # 停止
