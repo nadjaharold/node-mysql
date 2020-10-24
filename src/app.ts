@@ -1,8 +1,7 @@
+import * as mysql from 'mysql';
 require("dotenv").config();
-const express = require("express");
-const mysql = require("mysql");
 const env = process.env;
-
+const express = require("express");
 const app = express();
 
 const connection = mysql.createConnection({
@@ -20,7 +19,7 @@ connection.connect((err) => {
   console.log("success");
 });
 
-app.get("/", (req, res) => {
+app.get("/", (req:any, res:any) => {
   connection.query("SELECT * FROM users", (error, results) => {
     console.log(results);
     res.render("hello.ejs");
