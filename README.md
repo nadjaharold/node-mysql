@@ -3,35 +3,35 @@
 ## MEMO
 
 ```bash
-/* 起動 */
+# 起動
 mysql.server start
-/* 停止 */
+# 停止
 mysql.server stop
-/* ログイン(root user) */
+# ログイン(root user)
 mysql --user=root --password
-/* ログアウト */
+# ログアウト
 exit;
-/* バージョン確認 */
+# バージョン確認
 mysql --version
-/* DB確認 */
+# DB確認
 show databases;
-/* DB作成 */
+# DB作成
 create database *******;
-/* DB選択 */
+# DB選択
 use *******;
-/* テーブル一覧 */
+# テーブル一覧
 show tables;
-/* テーブル作成 */
+# テーブル作成
 CREATE TABLE users (id INT AUTO_INCREMENT, name TEXT, PRIMARY KEY (id));
-/* テーブル詳細確認 */
+# テーブル詳細確認
 DESCRIBE users;
-/* 取得 */
+# データ取得
 SELECT * FROM users;
-/* 挿入 */
+# データ挿入
 INSERT INTO users(name) VALUES ('にんじゃわんこ');
-/* テーブル削除 */
+# テーブル削除
 DROP TABLE users;
-/* DB削除 */
+# DB削除
 DROP DATABASE *******
 
 ```
